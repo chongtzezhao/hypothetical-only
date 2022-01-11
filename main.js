@@ -1,5 +1,15 @@
 window.onload = function(){
     var otterRight = document.getElementById("otter-right");
+    otterRight.animate([
+        // keyframes
+        { transform: 'translateX(0px)' },
+        { transform: 'translateX(52vw)' },
+        { transform: 'translateX(0px)' }
+      ], {
+        // timing options
+        duration: 6400,
+        iterations: Infinity
+      });
     setInterval(()=>{
         if(otterRight.style.visibility=="hidden"){
             otterRight.style.visibility = "visible";
@@ -10,6 +20,16 @@ window.onload = function(){
         console.log("visbility changed right")
     }, 3200);
     var otterLeft = document.getElementById("otter-left");
+    otterLeft.animate([
+        // keyframes
+        { transform: 'translateX(0px)' },
+        { transform: 'translateX(52vw)' },
+        { transform: 'translateX(0px)' }
+      ], {
+        // timing options
+        duration: 6400,
+        iterations: Infinity
+      });
     setInterval(()=>{
         if(otterLeft.style.visibility=="hidden"){
             otterLeft.style.visibility = "visible";
