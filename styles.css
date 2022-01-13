@@ -17,7 +17,7 @@ body, html {
 }
 
 .otter{
-  top: 9.9%;
+  top: 12vh;
   left: 8vw;
   border: 0px;
   width: 30vw;
@@ -76,7 +76,7 @@ p{
 #form{
   position: absolute;
   bottom: 0;
-  height: 75vh;
+  height: 80%;
   width: 100%;
   display: flex;
   flex-direction: column;
