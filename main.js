@@ -24,7 +24,7 @@ window.onload = function(){
     otterRight.animate([
         // keyframes
         { transform: 'translateX(0px)' },
-        { transform: 'translateX(56vw)' }
+        { transform: 'translateX(55vw)' }
       ], {
         // timing options
         duration: 3200,
@@ -38,7 +38,7 @@ window.onload = function(){
             otterRight.animate([
                 // keyframes
                 { transform: 'translateX(0px)' },
-                { transform: 'translateX(56vw)' }
+                { transform: 'translateX(55vw)' }
               ], {
                 // timing options
                 duration: 3200,
@@ -50,7 +50,7 @@ window.onload = function(){
             otterRight.style.display = "none";
             otterLeft.animate([
                 // keyframes
-                { transform: 'translateX(56vw)' },
+                { transform: 'translateX(55vw)' },
                 { transform: 'translateX(0px)' }
               ], {
                 // timing options
