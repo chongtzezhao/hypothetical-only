@@ -20,7 +20,7 @@ body, html {
 }
 
 .otter{
-  top: 10%;
+  top: 10.8%;
   left: 8vw;
   border: 0px;
   width: 29vw;
@@ -51,7 +51,7 @@ p{
   font-size: 3.7vh;
   width: 80vw;
   position: absolute;
-  top: 42%;
+  top: 44%;
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -59,7 +59,7 @@ p{
 
 #location-multitext{
   position: absolute;
-  top: 50.4%;
+  top: 52%;
   width: 98vw;
   height: 15%;
   display: inline-flex;
