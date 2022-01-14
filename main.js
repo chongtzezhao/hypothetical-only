@@ -1,37 +1,64 @@
 window.onload = function(){
     var otterRight = document.getElementById("otter-right");
     var otterLeft = document.getElementById("otter-left");
-    otterRight.animate([
+    /*otterRight.animate([
         // keyframes
         { transform: 'translateX(0px)' },
-        { transform: 'translateX(54vw)' },
+        { transform: 'translateX(56vw)' },
         { transform: 'translateX(0px)' }
       ], {
         // timing options
         duration: 6400,
         iterations: Infinity
       });
-    setInterval(()=>{
-        if(otterRight.style.visibility=="hidden"){
-            otterRight.style.visibility = "visible";
-            otterLeft.style.visibility = "hidden";
-        }
-        else{
-            otterLeft.style.visibility = "visible";
-            otterRight.style.visibility = "hidden";
-        }
-        console.log("visbility changed right")
-    }, 3200);
     otterLeft.animate([
         // keyframes
         { transform: 'translateX(0px)' },
-        { transform: 'translateX(54vw)' },
+        { transform: 'translateX(56vw)' },
         { transform: 'translateX(0px)' }
       ], {
         // timing options
         duration: 6400,
         iterations: Infinity
+      });*/
+    otterRight.animate([
+        // keyframes
+        { transform: 'translateX(0px)' },
+        { transform: 'translateX(56vw)' }
+      ], {
+        // timing options
+        duration: 3200,
+        iterations: 1
       });
+    setInterval(()=>{
+        console.log(otterLeft.style.display);
+        if(otterRight.style.display=="none"){
+            otterRight.style.removeProperty('display');
+            otterLeft.style.display = "none";
+            otterRight.animate([
+                // keyframes
+                { transform: 'translateX(0px)' },
+                { transform: 'translateX(56vw)' }
+              ], {
+                // timing options
+                duration: 3200,
+                iterations: 1
+              });
+        }
+        else{
+            otterLeft.style.removeProperty('display');
+            otterRight.style.display = "none";
+            otterLeft.animate([
+                // keyframes
+                { transform: 'translateX(56vw)' },
+                { transform: 'translateX(0px)' }
+              ], {
+                // timing options
+                duration: 3200,
+                iterations: 1
+              });
+        }
+    }, 3200);
 }
 
 var state = true;
@@ -46,8 +73,8 @@ function changeDetails(){
         document.getElementById("submit").style.opacity = 0;
     }
     else{
-        document.getElementById("form").style.display = "flex";
-        document.getElementById("submit").style.opacity = 1;
+        document.getElementById("form").style.removeProperty('display');
+        document.getElementById("submit").style.removeProperty('opacity');
     }
     state = !(state);
 }

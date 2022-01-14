@@ -17,10 +17,10 @@ body, html {
 }
 
 .otter{
-  top: 10.5%;
+  top: 10.46%;
   left: 8vw;
   border: 0px;
-  width: 30vw;
+  width: 29vw;
   position: absolute;
   /*-webkit-animation: mover 3.2s linear infinite alternate;
   animation: mover 3.2s linear infinite alternate;*/
@@ -76,7 +76,7 @@ p{
 #form{
   position: absolute;
   bottom: 0;
-  height: 80%;
+  height: 75%;
   width: 100%;
   display: flex;
   flex-direction: column;
