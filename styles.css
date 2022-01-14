@@ -4,10 +4,13 @@ body, html {
 
 #bg {
   /* The image used */
-  background-image: url("images/main-new.jpg");
+  background-image: url("images/background-compressed.png");
 
   /* Full height */
-  height: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  
 
   /* Center and scale the image nicely */
   background-position: center;
@@ -57,7 +60,7 @@ p{
 #location-multitext{
   position: absolute;
   top: 50.4%;
-  width: 100%;
+  width: 98vw;
   height: 15%;
   width: 80vw;
   display: inline-flex;
@@ -68,7 +71,7 @@ p{
 }
 
 #location{
-  width: 100%;
+  width: 98vw;
   font-weight: 500;
   font-size: 2.5vh;
 }
@@ -77,20 +80,23 @@ p{
   position: absolute;
   bottom: 0;
   height: 75%;
-  width: 100%;
+  width: 98vw;
   display: flex;
   flex-direction: column;
   background-color: #238d86;
   z-index: 1;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 label, input, button, textarea{
   word-wrap: break-word;
   font-family: 'Poppins', sans-serif;
-  width: 100%;
   left: 0px;
   text-align: center;
   font-size: 2.5vh;
+  
 }
 
 #datetime-input{
@@ -108,4 +114,5 @@ label, input, button, textarea{
   position: absolute;
   height: 7%;
   bottom: 3.5%;
+  width: 100%;
 }
